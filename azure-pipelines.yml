@@ -22,9 +22,6 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'build testDebugUnitTest'
     testRunTitle: 'コード カバレッジ'
-    sonarQubeRunAnalysis: true
-    sqGradlePluginVersionChoice: 'specify'
-    sonarQubeGradlePluginVersion: '2.6.1'
     checkStyleRunAnalysis: true
     spotBugsAnalysis: true
     spotbugsGradlePluginVersion: '4.7.0'
