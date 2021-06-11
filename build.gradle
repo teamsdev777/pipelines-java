@@ -20,7 +20,7 @@ dependencies {
 
 group = 'helloworld'
 version = '1.0-SNAPSHOT'
-description = 'pipelines-java'application
+description = 'pipelines-java application'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 publishing {
