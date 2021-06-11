@@ -22,8 +22,5 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'build testDebugUnitTest'
     testRunTitle: 'コード カバレッジ'
-    checkStyleRunAnalysis: true
-    spotBugsAnalysis: true
-    spotbugsGradlePluginVersion: '4.7.0'
     
     
