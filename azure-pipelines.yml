@@ -18,6 +18,15 @@ steps:
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
+    publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
-    tasks: 'build'
+    tasks: 'build testDebugUnitTest'
+    testRunTitle: 'コード カバレッジ'
+    sonarQubeRunAnalysis: true
+    sqGradlePluginVersionChoice: 'specify'
+    sonarQubeGradlePluginVersion: '2.6.1'
+    checkStyleRunAnalysis: true
+    spotBugsAnalysis: true
+    spotbugsGradlePluginVersion: '4.7.0'
+    
+    
