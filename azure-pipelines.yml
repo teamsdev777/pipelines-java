@@ -23,5 +23,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
+    sonarQubeRunAnalysis: false 
+    sqMavenPluginVersionChoice: 'latest'
     checkStyleRunAnalysis: true
     findBugsRunAnalysis: true
