@@ -15,6 +15,11 @@ steps:
   inputs:
     SonarQube: 'teams_sonarqube'
     scannerMode: 'Other'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.projectKey=teams-java-pipeline_teams-java-pipeline
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
