@@ -79,6 +79,7 @@
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <sonar.java.spotbugs.reportPaths>**/spotbugs.xml</sonar.java.spotbugs.reportPaths>
   </properties>
 	
 </project>
