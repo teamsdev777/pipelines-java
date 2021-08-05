@@ -42,16 +42,21 @@
       </plugin>
       <plugin>
         <groupId>com.github.spotbugs</groupId>
-        <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.2.0</version>
-        <dependencies>
-          <!-- overwrite dependency on spotbugs if you want to specify the version of spotbugs -->
-          <dependency>
-            <groupId>com.github.spotbugs</groupId>
-            <artifactId>spotbugs</artifactId>
-            <version>4.3.0</version>
-          </dependency>
-       </dependencies>
+          <artifactId>spotbugs-maven-plugin</artifactId>
+          <version> 3.1 . 1 </version>
+          <configuration>
+             <effort>Max</effort>
+             <threshold>Low</threshold>
+             <failOnError> true </failOnError>
+             <includeFilterFile>${session.executionRootDirectory}/spotbugs-include.xml</includeFilterFile>
+             <plugins>
+                <plugin>
+                  <groupId>com.h3xstream.findsecbugs</groupId>
+                  <artifactId>findsecbugs-plugin</artifactId>
+                  <version>LATEST</version> <!-- Auto-update to the latest stable -->
+               </plugin>
+            </plugins>
+          </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
